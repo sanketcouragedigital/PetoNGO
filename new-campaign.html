@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bootstrap/font-awesome-4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="bootstrap/css/ionicons.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+	  <!--<link rel="stylesheet" href="bootstrap/css/jquery-ui.css">-->
+	  <link rel="stylesheet" href="bootstrap/css/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+	  <!--<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>-->
+	  <script src="plugins/jQuery/jquery-1.9.1.js"></script>
+
+	  <!--<script src="js/jquery-1.10.2.js">-->
+	  </script><script src="js/jquery/jquery-ui.js"></script>
+
+	  <script src="dist/js/app.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+	  <script src="bootstrap/daterangepicker/moment.js" type="text/javascript"></script>
+    <script src="bootstrap/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+
+    <script src="plugins/input-mask/jquery.inputmask.js"></script>
+    <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+	  <!-- daterange picker -->
+	  <link href="plugins/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstrap/daterangepicker/daterangepicker.css" type="text/css" />
+
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <script src="js/jquery/jquery.validate.js"></script>
+    <script src="js/urlenvironment.js"></script>
+    <script src="js/campaignForm.js"></script>
+    <script src="js/cropit/dist/jquery.cropit.js"></script>
+    <style>
+      #first-image-cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 7px;
+        width: 250px;
+        height: 250px;
+      }
+      #second-image-cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 7px;
+        width: 250px;
+        height: 250px;
+      }
+      #third-image-cropit-preview {
+        background-color: #f8f8f8;
+        background-size: cover;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 7px;
+        width: 250px;
+        height: 250px;
+      }
+      #first-image-cropit-image-zoom-input {
+        display: block;
+        border-radius: 5px;
+        width: 250px !important;
+      }
+      #second-image-cropit-image-zoom-input {
+        display: block;
+        border-radius: 5px !important;
+        width: 250px !important;
+      }
+      #third-image-cropit-image-zoom-input {
+        display: block;
+        border-radius: 5px !important;
+        width: 250px !important;
+      }
+      input {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <!-- Main Header -->
+		<header class="main-header">
+			<a href="index2.html" class="logo">
+			  <!-- mini logo for sidebar mini 50x50 pixels -->
+			  <span class="logo-mini"><b>P</b></span>
+			  <!-- logo for regular state and mobile devices -->
+			  <span class="logo-lg"><b>Peto</b></span>
+			</a>
+
+        <!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+					<span class="sr-only">Toggle navigation</span>
+				</a>
+			</nav>
+		</header>
+
+		<aside class="main-sidebar">
+			<section class="sidebar">
+			   <ul class="sidebar-menu" >
+          <li class="header">Campaign Menu</li>
+					<li class="active treeview">
+						<a href="#"><i class="fa fa-tasks"></i> <span>Campaigns</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <ul class="treeview-menu">
+              <li class="active"><a href="new-campaign.html"><i class="fa fa-file-text"></i> Create Campaign</a></li>
+              <li><a href="campaign-list.html"><i class="fa fa-list"></i> List of Campaigns</a></li>
+            </ul>
+          </li>
+				</ul>
+			</section>
+		</aside>
+
+		<div class="content-wrapper">
+      <section class="content-header">
+				<h1>Create Campaign</h1>
+        <ol class="breadcrumb">
+          <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+          <li class="active">Create Campaign</li>
+        </ol>
+			</section>
+      <section class="content">
+				<div class="box box-info">
+					<div class="box-body">
+							<form id="createCampaignForm">
+                <label><b>Please select any one image.</b></label>
+                <table width="100%">
+                  <tr>
+                    <td align="center" valign="middle">
+                      <div id="first-image-cropper">
+                        <div id="first-image-cropit-preview" class="cropit-preview"></div>
+                        <input type="range" id="first-image-cropit-image-zoom-input" class="cropit-image-zoom-input"/>
+                        <input type="file" id="first-image-cropit-image-input" class="cropit-image-input"/>
+                      </div>
+                    </td>
+                    <td align="center" valign="middle">
+                      <div id="second-image-cropper">
+                        <div id="second-image-cropit-preview" class="cropit-preview"></div>
+                        <input type="range" id="second-image-cropit-image-zoom-input" class="cropit-image-zoom-input"/>
+                        <input type="file" id="second-image-cropit-image-input" class="cropit-image-input"/>
+                      </div>
+                    </td>
+                    <td align="center" valign="middle">
+                      <div id="third-image-cropper">
+                        <div id="third-image-cropit-preview" class="cropit-preview"></div>
+                        <input type="range" id="third-image-cropit-image-zoom-input" class="cropit-image-zoom-input"/>
+                        <input type="file" id="third-image-cropit-image-input" class="cropit-image-input"/>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+								<div class="form-group">
+									<input type="text" class="form-control" id="campaignName" name="campaignName" placeholder="Campaign Name" />
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="ngoName" name="ngoName" placeholder="NGO Name" />
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="actualAmount" name="actualAmount" placeholder="Actual Amount" />
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="minimumAmount" name="minimumAmount" placeholder="Minimum Amount" />
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="description" name="description" placeholder="Description" />
+								</div>
+								<div class="form-group">
+                  <input type="text" class="form-control" id="lastDate" name="lastDate" placeholder="Last Date" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+								</div>
+                <div class="form-group">
+      						<button class="pull-left btn btn-default" id="campaignSubmit">Submit</button>
+      					</div>
+							</form>
+					</div>
+				</div>
+			</section>
+		</div>
+    <footer class="main-footer">
+      <strong>Copyright &copy; 2016 <a href="http://petoandme.com">Peto</a>.</strong> All rights reserved.
+    </footer>
+	</div>
+  <script>
+    $(function() {
+      //for first image
+      $('#first-image-cropper').cropit();
+      //for second image
+      $('#second-image-cropper').cropit();
+      //for third image
+      $('#third-image-cropper').cropit();
+
+      $("#lastDate").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    });
+  </script>
+  </body>
+</html>

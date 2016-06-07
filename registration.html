@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="bootstrap/font-awesome-4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+		<link rel="stylesheet" href="bootstrap/css/ionicons.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+
+	<!--<script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>-->
+	<script src="plugins/jQuery/jquery-1.9.1.js"></script>
+	<script src="js/jquery/jquery.cookie.js"></script>
+	<script src="js/jquery/jquery.validate.js"></script>
+  <script src="js/urlenvironment.js"></script>
+	<script src="js/register.js"></script>
+
+  </head>
+	<body class="hold-transition login-page">
+		<div class="login-box">
+			<div class="login-logo">
+				<img src="images/peto.png" height="110px">
+			</div>
+			<div class="login-box-body" id="authentication">
+				<p class="login-box-msg"><b>Register Your Self</b></p>
+				<form id="registrationForm">
+					<div class="form-group has-feedback">
+						<input type="text" id="name" name="name" class="form-control" placeholder="Name">
+						<span class="glyphicon glyphicon-user form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="text" id="buildingname" name="buildingname" class="form-control" placeholder="Building Name">
+						<span class="glyphicon glyphicon-home form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="text" id="area" name="area" class="form-control" placeholder="Area">
+						<span class="glyphicon glyphicon-home form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="text" id="city" name="city" class="form-control" placeholder="City">
+						<span class="glyphicon glyphicon-home form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="text" id="mobileno" name="mobileno" class="form-control" placeholder="Mobile No">
+						<span class="glyphicon glyphicon-earphone form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="email" id="registrationemail" name="registrationemail" class="form-control" placeholder="Email">
+						<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="password" id="registrationpassword" name="registrationpassword"class="form-control" placeholder="Password">
+						<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+						<label class="Error"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="password" id="registrationconfirmpassword" name="registrationconfirmpassword" class="form-control" placeholder="Confirm Password">
+						<span class="glyphicon glyphicon-lock form-control-feedback"></span>
+						<label class="Error"id="passerror"></label>
+					</div>
+					<div class="form-group has-feedback">
+						<input type="url" id="ngourl" name="ngourl" class="form-control" placeholder="NGO Url">
+						<span class="glyphicon glyphicon-link form-control-feedback"></span>
+						<label class="Error"id="passerror"></label>
+					</div>
+					<div class="row">
+						<div class="col-xs-4">
+							<input type="submit" id="registrationSubmit" class="btn btn-primary btn-block btn-flat" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Bootstrap 3.3.5 -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<!-- iCheck -->
+		<script src="plugins/iCheck/icheck.min.js"></script>
+
+	</body>
+</html>
